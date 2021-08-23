@@ -2,7 +2,6 @@ package com.everis.reportsbank.map;
 
 import java.util.Date;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -10,11 +9,14 @@ import lombok.Setter;
 @Getter
 @Setter
 @NoArgsConstructor
-@AllArgsConstructor
-public class movements {
-	private Date dateCreated;
-	private String type;
+public class operationMapper {
 	private double amount;
-	private String accountEmisor;
-	private String accountRecep;
+
+	private Date dateCreated;
+	private String type; 
+
+	public operationMapper(double amount, String type) {
+		this.type = type;
+		this.amount = amount; 
+	}
 }

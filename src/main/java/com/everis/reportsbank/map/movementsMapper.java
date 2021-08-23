@@ -1,7 +1,6 @@
 package com.everis.reportsbank.map;
 
 import java.util.Date;
-import java.util.List;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -12,12 +11,10 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class accountData {
-	private String profile;
-	private String accountNumber;
-	private double amount;
+public class movementsMapper {
 	private Date dateCreated;
-	private String typeAccount;
-	private List<movements> movement;
-	private String idCustomer;
+	private String type;
+	private double amount;
+	private String accountEmisor;
+	private String accountRecep;
 }

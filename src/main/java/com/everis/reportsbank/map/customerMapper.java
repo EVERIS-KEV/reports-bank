@@ -6,7 +6,7 @@ import lombok.*;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class customer { 
+public class customerMapper { 
   private String idclient;
 
   private String dni;
