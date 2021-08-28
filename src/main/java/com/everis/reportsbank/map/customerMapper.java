@@ -1,12 +1,13 @@
 package com.everis.reportsbank.map;
 
-import lombok.*; 
+import lombok.*;
 
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class customerMapper { 
+public class customerMapper {
+
   private String idclient;
 
   private String dni;
